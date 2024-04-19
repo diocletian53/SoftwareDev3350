@@ -5,6 +5,7 @@
 
 ### 1.	Configure Application Properties
 application.properties
+
 spring.datasource.username=<your-username>
 
 spring.datasource.password=<your-password>
