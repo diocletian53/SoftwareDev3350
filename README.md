@@ -5,6 +5,7 @@
 
 ### 1.	Configure Application Properties
 spring.datasource.username=<your-username>
+
 spring.datasource.password=<your-password>
 ### 2.	Install IntelliJ IDEA Community Edition
 Install IntelliJ IDEA Community Edition for optimal compatibility.
