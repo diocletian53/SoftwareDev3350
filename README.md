@@ -4,9 +4,8 @@
 ## Setup Instructions : Spring Boot
 
 ### 1.	Configure Application Properties
-Populate application.properties with your database credentials:
-plaintextCopy code
-spring.datasource.username=<your-username> spring.datasource.password=<your-password> 
+spring.datasource.username=<your-username>
+spring.datasource.password=<your-password>
 ### 2.	Install IntelliJ IDEA Community Edition
 Install IntelliJ IDEA Community Edition for optimal compatibility.
 ### 3.	Install 7-Zip
