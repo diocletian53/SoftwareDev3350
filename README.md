@@ -1,7 +1,7 @@
 
 # Employee Management System Instructions
 
-## Setup Instructions
+## Setup Instructions : Spring Boot
 
 ### 1.	Configure Application Properties
 Populate application.properties with your database credentials:
