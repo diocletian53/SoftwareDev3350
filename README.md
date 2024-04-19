@@ -17,6 +17,7 @@ Download and install 7-Zip to resolve Windows long path directory issues during 
 Execute the employee-directory.sql script in DBeaver.
 ### 5.	Run the Application
 ThymeleafdemoApplication.java
+
 Run the application using the ThymeleafdemoApplication class.
 ### 6.	Access the Web Application
 Navigate to http://localhost:8080/employees/list in your web browser.
