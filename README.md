@@ -4,6 +4,7 @@
 ## Setup Instructions : Spring Boot
 
 ### 1.	Configure Application Properties
+application.properties
 spring.datasource.username=<your-username>
 
 spring.datasource.password=<your-password>
@@ -14,6 +15,7 @@ Download and install 7-Zip to resolve Windows long path directory issues during 
 ### 4.	Run SQL Script
 Execute the employee-directory.sql script in DBeaver.
 ### 5.	Run the Application
+ThymeleafdemoApplication.java
 Run the application using the ThymeleafdemoApplication class.
 ### 6.	Access the Web Application
 Navigate to http://localhost:8080/employees/list in your web browser.
