@@ -13,7 +13,7 @@
 </head>
 
 <body>
-
+    <!-- Display the contents of employees model attribute -->
 <div class="container">
 
 	<h3>Employee Directory</h3>
@@ -36,6 +36,7 @@
 		</thead>
 		
 		<tbody>
+			<!-- Loop over the list of employees "temp emoloyee is the temp loop variable"-->
 			<tr th:each="tempEmployee : ${employees}">
 			
 				<td th:text="${tempEmployee.firstName}" />	

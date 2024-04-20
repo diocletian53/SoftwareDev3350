@@ -25,6 +25,9 @@
                          th:object="${employee}" method="POST">
 
             <!-- Add hidden form field to handle update -->
+                        <!-- Call Getter methods to populate form fields intially java -->
+                        <!-- When submit form calll setter methods to populate java objects with form data  -->
+
             <input type="hidden" th:field="*{id}" />
 
             <input type="text" th:field="*{firstName}"
