@@ -20,6 +20,7 @@
         <hr>
 
         <p class="h4 mb-4">Save Employee</p>
+            <!-- Send form data to employees save, our model attribute from EmployeeControoler themodel.addattribute(employee,theeployee) -->
 
         <form action="#" th:action="@{/employees/save}"
                          th:object="${employee}" method="POST">
@@ -27,6 +28,7 @@
             <!-- Add hidden form field to handle update -->
                         <!-- Call Getter methods to populate form fields intially java -->
                         <!-- When submit form calll setter methods to populate java objects with form data  -->
+          <!-- Call setter methods empoyee.setFirstname,employee.setLastName  -->
 
             <input type="hidden" th:field="*{id}" />
 
@@ -44,6 +46,7 @@
         </form>
 
         <hr>
+          <!-- Navigation Link go back to employeeList  -->
         <a th:href="@{/employees/list}">Back to Employees List</a>
 
     </div>

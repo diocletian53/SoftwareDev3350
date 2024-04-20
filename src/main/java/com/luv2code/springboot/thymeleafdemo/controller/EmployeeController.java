@@ -39,7 +39,7 @@ public class EmployeeController {
 
 		// create model attribute to bind form data
 		Employee theEmployee = new Employee();
-
+		// Our thymeleaf template will access this data for binding form data
 		theModel.addAttribute("employee", theEmployee);
 
 		return "employees/employee-form";

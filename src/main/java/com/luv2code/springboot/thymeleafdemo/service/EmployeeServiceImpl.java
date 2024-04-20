@@ -18,7 +18,8 @@ public class EmployeeServiceImpl implements EmployeeService {
 	public EmployeeServiceImpl(EmployeeRepository theEmployeeRepository) {
 		employeeRepository = theEmployeeRepository;
 	}
-	
+	// Call new method/ ASC last name
+	// Employee sorted by last name
 	@Override
 	public List<Employee> findAll() {
 		return employeeRepository.findAllByOrderByLastNameAsc();
