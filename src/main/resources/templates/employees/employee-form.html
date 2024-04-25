@@ -1,6 +1,5 @@
 <!DOCTYPE HTML>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -20,15 +19,9 @@
         <hr>
 
         <p class="h4 mb-4">Save Employee</p>
-            <!-- Send form data to employees save, our model attribute from EmployeeControoler themodel.addattribute(employee,theeployee) -->
 
         <form action="#" th:action="@{/employees/save}"
-                         th:object="${employee}" method="POST">
-
-            <!-- Add hidden form field to handle update -->
-                        <!-- Call Getter methods to populate form fields intially java -->
-                        <!-- When submit form calll setter methods to populate java objects with form data  -->
-          <!-- Call setter methods empoyee.setFirstname,employee.setLastName  -->
+              th:object="${employee}" method="POST">
 
             <input type="hidden" th:field="*{id}" />
 
@@ -41,24 +34,27 @@
             <input type="text" th:field="*{email}"
                    class="form-control mb-4 w-25" placeholder="Email">
 
+            <!-- Add new form fields -->
+            <input type="text" th:field="*{ssn}"
+                   class="form-control mb-4 w-25" placeholder="SSN">
+
+                   <input type="date" th:field="*{hireDate}" 
+                   class="form-control mb-4 w-25">
+
+
+
+            <input type="number" step="0.01" th:field="*{salary}"
+                   class="form-control mb-4 w-25" placeholder="Salary">
+
             <button type="submit" class="btn btn-info col-2">Save</button>
 
         </form>
 
         <hr>
-          <!-- Navigation Link go back to employeeList  -->
         <a th:href="@{/employees/list}">Back to Employees List</a>
 
     </div>
 
-
 </body>
 
 </html>
-
-
-
-
-
-
-
