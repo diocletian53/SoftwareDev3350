@@ -12,6 +12,9 @@
 </head>
 
 <body>
+
+    
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Employee Management</a>
@@ -35,8 +38,10 @@
                             Addresses
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="addressesDropdown">
-                            <li><a class="dropdown-item" href="addresses.html">List Addresses</a></li>
-                        </ul>
+                            <li><a class="dropdown-item" href="http://localhost:8080/addresses/list">List Addresses</a></li>
+                        
+                          </ul>
+                          
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="demographicsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -60,6 +65,7 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="jobTitlesDropdown">
                             <li><a class="dropdown-item" href="job-titles.html">List Job Titles</a></li>
+                            <li><a class="dropdown-item" href="add-job-title.html">Add Job Title</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -81,6 +87,13 @@
         <table class="table table-bordered table-striped">
             <thead class="table-dark">
                 <tr>
+                    
+    <!-- Add a button -->
+    <a th:href="@{/employees/showFormForAdd}"
+    class="btn btn-primary btn-sm mb-3">
+     Add Employee
+ </a>
+
                     <th>First Name</th>
                     <th>Last Name</th>
                     <th>Email</th>
@@ -121,3 +134,4 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
