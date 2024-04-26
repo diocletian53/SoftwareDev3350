@@ -3,26 +3,81 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <title>Employee Directory</title>
 </head>
 
 <body>
-    <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Employee Management</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="employeesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Employees
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="employeesDropdown">
+                            <li><a class="dropdown-item" href="employees.html">List Employees</a></li>
+                            <li><a class="dropdown-item" href="employee-job-titles.html">Employee Job Titles</a></li>
+                            <li><a class="dropdown-item" href="employee-divisions.html">Employee Divisions</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="addressesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Addresses
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="addressesDropdown">
+                            <li><a class="dropdown-item" href="addresses.html">List Addresses</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="demographicsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Demographics
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="demographicsDropdown">
+                            <li><a class="dropdown-item" href="demographics.html">List Demographics</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="divisionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Divisions
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="divisionsDropdown">
+                            <li><a class="dropdown-item" href="divisions.html">List Divisions</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="jobTitlesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Job Titles
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="jobTitlesDropdown">
+                            <li><a class="dropdown-item" href="job-titles.html">List Job Titles</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="payrollDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Payroll
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="payrollDropdown">
+                            <li><a class="dropdown-item" href="payroll.html">List Payroll</a></li>
+                            <li><a class="dropdown-item" href="part-time-payroll.html">List Part-Time Payroll</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-        <h3>Employee Directory</h3>
-        <hr>
-
-        <!-- Add a button -->
-        <a th:href="@{/employees/showFormForAdd}"
-           class="btn btn-primary btn-sm mb-3">
-            Add Employee
-        </a>
-
+    <div class="container mt-4">
+        <h1>Employee Directory</h1>
         <table class="table table-bordered table-striped">
             <thead class="table-dark">
                 <tr>
@@ -42,7 +97,7 @@
                     <td th:text="${tempEmployee.lastName}" />
                     <td th:text="${tempEmployee.email}" />
                     <td th:text="${tempEmployee.ssn}" />
-                    <td th:text="${#temporals.format(tempEmployee.hireDate, 'yyyy-MM-dd')}" /> <!-- Use #temporals.format for LocalDate -->
+                    <td th:text="${#temporals.format(tempEmployee.hireDate, 'yyyy-MM-dd')}" />
                     <td th:text="${#numbers.formatDecimal(tempEmployee.salary, 1, 'POINT', 2, 'COMMA')}" />
 
                     <td>
@@ -60,7 +115,9 @@
                 </tr>
             </tbody>
         </table>
-
     </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
