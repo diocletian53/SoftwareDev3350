@@ -13,6 +13,12 @@
   <div class="container mt-4">
     <h1>List of Addresses</h1>
     <button class="btn btn-primary mb-3" onclick="goBack()">Go Back to Employee List</button>
+  
+   <!-- Add Address button -->
+        <a th:href="@{/address/showFormForAdd}" class="btn btn-primary btn-sm mb-3">
+            Add Address
+        </a>
+
 
     <script>
       function goBack() {
