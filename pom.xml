@@ -112,6 +112,24 @@
      <artifactId>com.liferay.portal.kernel</artifactId>
      <version>4.27.1</version>
    </dependency>
+ 
+   <dependency>
+     <groupId>com.heartlandpaymentsystems</groupId>
+     <artifactId>globalpayments-sdk</artifactId>
+     <version>5.6</version>
+   </dependency>
+ 
+   <dependency>
+     <groupId>com.heartlandpaymentsystems</groupId>
+     <artifactId>globalpayments-sdk</artifactId>
+     <version>5.6</version>
+   </dependency>
+ 
+   <dependency>
+     <groupId>com.heartlandpaymentsystems</groupId>
+     <artifactId>globalpayments-sdk</artifactId>
+     <version>5.6</version>
+   </dependency>
  </dependencies>
 
 	<build>
