@@ -1,7 +1,5 @@
 package com.luv2code.springboot.thymeleafdemo.controller;
 
-// DemographicsController.java
-
 import com.luv2code.springboot.thymeleafdemo.entity.Demographics;
 import com.luv2code.springboot.thymeleafdemo.service.DemographicsService;
 import org.springframework.stereotype.Controller;
@@ -51,5 +49,12 @@ public class DemographicsController {
     public String deleteDemographics(@RequestParam("empid") int empid) {
         demographicsService.deleteById(empid);
         return "redirect:/demographics/list";
+    }
+
+    @GetMapping("/search")
+    public String searchDemographics(@RequestParam(required = false) String searchTerm, Model model) {
+        List<Demographics> demographics = demographicsService.findByNameOrSsn(searchTerm);
+        model.addAttribute("demographics", demographics);
+        return "demographics/list-demographics";
     }
 }

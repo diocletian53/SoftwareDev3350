@@ -1,4 +1,3 @@
-// DemographicsService.java
 package com.luv2code.springboot.thymeleafdemo.service;
 
 import com.luv2code.springboot.thymeleafdemo.entity.Demographics;
@@ -14,4 +13,6 @@ public interface DemographicsService {
     void save(Demographics demographics);
 
     void deleteById(int empid);
+
+    List<Demographics> findByNameOrSsn(String searchTerm);
 }
