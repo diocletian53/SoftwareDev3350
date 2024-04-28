@@ -224,7 +224,6 @@ VALUES
 (5, 'Graphic Designer');
 
 
-
 ALTER TABLE payroll
 ADD health_cost DECIMAL(10, 2);
 
