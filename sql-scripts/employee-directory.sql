@@ -222,3 +222,11 @@ VALUES
 (3, 'Marketing Manager'),
 (4, 'Sales Representative'),
 (5, 'Graphic Designer');
+
+
+
+ALTER TABLE payroll
+ADD health_cost DECIMAL(10, 2);
+
+UPDATE payroll
+SET health_cost = Salary * 0.002;
