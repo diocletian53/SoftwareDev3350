@@ -1,3 +1,8 @@
+CREATE DATABASE  IF NOT EXISTS `employee_directory`;
+USE `employee_directory`;
+
+
+
 CREATE TABLE employee (
     id INT PRIMARY KEY,
     first_name VARCHAR(50),
