@@ -123,7 +123,13 @@ CREATE TABLE payroll (
 
 
 
-
+INSERT INTO employee (id, first_name, last_name, email, SSN, HireDate, Salary)
+VALUES
+    (1, 'John', 'Doe', 'john.doe@example.com', '123-45-6789', '2020-05-01', 50000.00),
+    (2, 'Jane', 'Smith', 'jane.smith@example.com', '987-65-4321', '2018-09-15', 65000.50),
+    (3, 'Michael', 'Johnson', 'michael.johnson@example.com', '456-78-9012', '2022-03-20', 45500.75),
+    (4, 'Emily', 'Williams', 'emily.williams@example.com', '234-56-7890', '2019-11-01', 58000.25),
+    (5, 'David', 'Brown', 'david.brown@example.com', '876-54-3210', '2021-07-15', 62000.00);
 
 
 
